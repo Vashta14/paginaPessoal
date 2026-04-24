@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Pessoal | Bootstrap</title>
+    <meta
+      name="description"
+      content="Página pessoal desenvolvida em HTML, sem framework."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container d-flex justify-content-start">
+        <a class="navbar-brand me-auto" href="#">Raul Souza Lima</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-2" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#formacao">Formação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#interesses">Interesses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contato">Contato</a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButtonTheme"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              title="Tema"
+            >
+              <span id="themeIcon"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonTheme">
+              <li>
+                <button
+                  class="dropdown-item active"
+                  type="button"
+                  data-theme="light"
+                  disabled
+                >
+                  Light
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button" data-theme="dark">
+                  Dark
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-section text-center pt-3">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Raul Souza Lima</h1>
+        <p class="lead">
+          Desenvolvedor Frontend | Estudante de Sistemas de Informação
+        </p>
+      </div>
+    </header>
+
+    <section id="formacao" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Formação Acadêmica</h2>
+        <div class="card p-4">
+          <h4>Graduação em Sistemas de Informação em curso</h4>
+          <p class="mb-1 text-muted">Universidade Federal de Lavras (UFLA)</p>
+          <p>
+            Desenvolvimento focado em tecnologia da informação e gestão
+            empresarial.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="interesses" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Interesses Profissionais</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <h5>Frontend</h5>
+              <p class="small">
+                Desenvolvimento web com React e Next.js. Criação de interfaces
+                interativas otimizadas para diferentes plataformas.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <h5>Design</h5>
+              <p class="small">
+                Design de interfaces (UI), experiência do usuário (UX),
+                prototipagem e implementação de sistemas de design com foco em
+                usabilidade.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-3">
+              <h5>Desenvolvimento de jogos</h5>
+              <p class="small">
+                Desenvolvimento de jogos, design de mecânicas, programação em
+                engines modernas e otimização de performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Projetos</h2>
+        <div class="row g-4">
+          <div>
+            <a
+              class="card h-100 p-4 text-body text-decoration-none"
+              href="https://github.com/Vashta14/JogoWeb"
+              target="_blank"
+            >
+              <h4>Coliseu Arcano</h4>
+              <p class="text-muted small mb-3">
+                Jogo web de sobrevivência em arena
+              </p>
+
+              <div class="mb-3">
+                <h6 class="fw-bold">Descrição</h6>
+                <p>
+                  Jogo web de sobrevivência em arena, desenvolvido para a
+                  disciplina de Desenvolvimento Web.
+                </p>
+              </div>
+
+              <div class="mb-3">
+                <h6 class="fw-bold">Proposta</h6>
+                <p>
+                  Em Coliseu Arcano, o jogador controla um guerreiro em uma
+                  arena 2D e precisa sobreviver ao maior número possível de
+                  ondas de inimigos. O combate acontece em tempo real: o
+                  personagem se move com o teclado e ataca automaticamente o
+                  inimigo mais próximo.
+                </p>
+              </div>
+
+              <div>
+                <h6 class="fw-bold">Tecnologias</h6>
+                <p class="small">
+                  HTML5, CSS3, JavaScript puro. Foco em mecânicas simples
+                  (movimento, colisão, progressão por nível e spawn de inimigos)
+                  sem uso de frameworks.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title">Contato</h2>
+        <p>Atualmente localizado em Lavras, MG.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <span class="badge bg-secondary p-2" id="email"
+            >E-mail: raulsouzlima@gmail.com</span
+          >
+          <span id="github" class="badge bg-dark p-2">GitHub: Vashta14</span>
+        </div>
+      </div>
+    </section>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

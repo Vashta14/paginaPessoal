@@ -1,2 +1,3 @@
 # paginaPessoal
-Pagina pessoal proposta na Atividade Prática 2 da disciplina de Programação Web 
+
+Projeto de página pessoal da disciplina de Programação Web, com duas implementações equivalentes: uma em Bootstrap e outra em Tailwind CSS.
